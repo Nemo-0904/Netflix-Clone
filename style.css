@@ -1,0 +1,223 @@
+/* * implies apply to all tags  */
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+    
+} 
+body{
+    background-color: black;
+    color:white;
+    font-family:"Poppins",sans-serif ;
+}
+.navbar{
+    position: absolute;
+    top:0;
+    width:100%;
+    /* elements will appear side by side using flex*/
+    display:flex;
+    justify-content: space-between;
+    /* justify content - space between will put space between the contents*/
+    padding: 2% 13% ;
+    z-index: 12;
+
+}
+
+.navbar_netflix{
+    height: 100%;
+    width:110px;
+}
+
+.navbar_nav_items{
+    display:flex;
+    gap:16px;
+}
+
+.netflix_logo{
+    width:100%;
+    height:100%;
+}
+.language_drop_down{
+    background:white;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    border:none;
+    color: white;
+    height: 35px;
+     width:105px;
+
+}
+.dropdown_container{
+    border:1px solid white;
+    /* size of border, pattern, colour */
+    padding: 0.4 rem;
+    /* rem :  used for fonts. em = emphasise , rem : relaative t0 parent/root element whats its size */
+    border-radius: 4px;
+    background : rgba(0,0,0,0.4);
+    position: center;
+    
+}
+
+.signin_button{
+    border:#dc030f;
+    background-color: #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem ;
+     border-radius: 4px;
+     height : 37px;
+     width:90px;
+}
+.hero_bg_image_container{
+    height: 100%;
+    width: 100%;
+   
+}
+.hero_bg_image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* object-fit: cover is used to avoid overflow or overlapping  */
+}
+.hero_bg_overlay{
+    position: absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7)
+    /* z index will move the object in the z axis. u need to use another property called as inset  so that it actually lays on top of the image. */
+}
+.hero_card{
+    /* padding:4%; */
+    
+    margin: auto;
+    position:absolute;
+    top:35%;
+     left:20%;
+    right: 25%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero_title{
+    font-weight: 600;
+    font-size: 2.1rem;
+ right: 25%;
+    left:20%; 
+    /* gap: 15px; */
+}
+.hero_subtitle, .hero_desc{
+    font-weight: 400;
+    font-size:  1.3rem;
+   
+    right: 25%; 
+    left: 20%;
+
+
+} 
+
+.email{
+    font-size: 15px;
+    width: 420px;
+    height:60px;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    border-color:white;
+    left: 20%;
+   
+}
+.get_started{
+
+    font-size: large;
+    width:150px;
+    height:60px;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    border-radius: 4px;
+}
+
+.card_1,.card_2, .card_3{
+    border-top: 8px rgb(69,69,69);
+    padding: 50px;
+}
+
+.card_1{
+    position: relative;
+    display:inline-grid;
+    /* inline grid: to create layouts where elements flow horizontally within a container.   */
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.desc_1{
+    padding-left: 10%;
+
+}
+/* .card_1 video{} */
+
+.card_1 img{
+grid-column: 2/2;
+grid-row: 1/2;
+
+
+}
+.style_cards h1{
+    font-size: 3rem;
+    padding:1rem;
+    padding-left: 0;
+    
+}
+
+.style_cards h3{
+    font-size: 1.6rem;
+}
+
+.card_2{
+        position: relative;
+    /* display:inline-grid; */
+    /* inline grid: to create layouts where elements flow horizontally within a container.   */
+    grid-template-columns:  40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+/* .desc_2{
+    padding: 100%;
+} */
+
+.card_3{
+      position: relative;
+    display:inline-grid;
+    /* inline grid: to create layouts where elements flow horizontally within a container.   */
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc_3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.card_3 img{
+
+    /* width:110%; */
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+/* .card_3 video{
+    position: relative;
+    top:-87px;
+    left:125px;
+    height:78%;
+    width: 65%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+} */
